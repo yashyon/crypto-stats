@@ -74,17 +74,18 @@ const CoinsTable = () => {
                 />
                 <TableContainer component={Paper}>
                     {loading ? (
-                        <LinearProgress style={{ backgroundColor: "gold" }} />
+                        <LinearProgress style={{ backgroundColor: "darkblue" }} />
                     ) : (
                         <Table aria-label="simple table">
-                            <TableHead style={{ backgroundColor: "#EEBC1D" }}>
+                            <TableHead style={{ backgroundColor: "darkblue" }}>
                                 <TableRow>
                                     {["Coin", "Price", "24h Change", "Market Cap"].map((head) => (
                                         <TableCell
                                             style={{
-                                                color: "black",
+                                                color: "white",
                                                 fontWeight: "700",
                                                 fontFamily: "Montserrat",
+                                                fontSize: "18px"
                                             }}
                                             key={head}
                                             align={head === "Coin" ? "" : "right"}
@@ -131,26 +132,26 @@ const CoinsTable = () => {
                                                         >
                                                             {row.symbol}
                                                         </span>
-                                                        <span style={{ color: "darkgrey" }}>
+                                                        <span>
                                                             {row.name}
                                                         </span>
                                                     </div>
                                                 </TableCell>
-                                                <TableCell align="right">
+                                                <TableCell align="right" className={classes.whiteText}>
                                                     {symbol}{" "}
                                                     {numberWithCommas(row.current_price.toFixed(2))}
                                                 </TableCell>
                                                 <TableCell
                                                     align="right"
                                                     style={{
-                                                        color: profit > 0 ? "rgb(14, 203, 129)" : "red",
+                                                        color: profit > 0 ? "green" : "red",
                                                         fontWeight: 500,
                                                     }}
                                                 >
                                                     {profit && "+"}
                                                     {row.price_change_percentage_24h.toFixed(2)}%
                                                 </TableCell>
-                                                <TableCell align="right">
+                                                <TableCell align="right" className={classes.whiteText}>
                                                     {symbol}{" "}
                                                     {numberWithCommas(
                                                         row.market_cap.toString().slice(0, -6)

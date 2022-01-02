@@ -2,25 +2,28 @@ import { makeStyles, createTheme } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles({
     row: {
-        backgroundColor: "#16171a",
+        backgroundColor: "#FFFFFF",
+
         cursor: "pointer",
         "&:hover": {
-            backgroundColor: "#131111",
+            backgroundColor: "#CFCFCF",
         },
         fontFamily: "Montserrat",
     },
     pagination: {
         "& .MuiPaginationItem-root": {
-            color: "gold",
+            color: "darkblue",
         },
     },
+    whiteText: {
+        color: "black"
+    }
 });
 
 export const darkTheme = createTheme({
     palette: {
         primary: {
-            main: "#fff",
+            main: "#111111",
         },
-        type: "dark",
     },
 });

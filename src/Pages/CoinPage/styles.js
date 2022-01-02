@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: "column",
         alignItems: "center",
         marginTop: 25,
-        borderRight: "2px solid grey",
+        borderRight: "2px solid black",
     },
     heading: {
         fontWeight: "bold",

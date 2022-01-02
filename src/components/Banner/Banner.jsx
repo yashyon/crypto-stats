@@ -18,17 +18,17 @@ const Banner = () => {
                             fontFamily: "Montserrat",
                         }}
                     >
-                        Crypto Hunter
+                        Crypto Stats
                     </Typography>
                     <Typography
                         variant="subtitle2"
                         style={{
-                            color: "darkgrey",
+                            color: "black",
                             textTransform: "capitalize",
                             fontFamily: "Montserrat",
                         }}
                     >
-                        Get all the Info regarding your favorite Crypto Currency
+                        Get all the info regarding any Crypto Currency
                     </Typography>
                 </div>
                 <Carousel />
