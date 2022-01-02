@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import App from "./app/App";
 import "react-alice-carousel/lib/alice-carousel.css";
-import CryptoContext from "./CryptoContext";
+import CryptoContext from "./context/CryptoContext";
 
 ReactDOM.render(
   <React.StrictMode>
